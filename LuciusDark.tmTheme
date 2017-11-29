@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Lucius Dark</string>
+    <key>settings</key>
+    <array>
+      <!-- Global settings
+        -- state: mostly consistent with vim markup
+        -->
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#303030</string>
+          <key>foreground</key>
+          <string>#d7d7d7</string>
+          <key>caret</key>
+          <string>#d7d7d7</string>
+          <key>lineHighlight</key>
+          <string>#444444</string>
+          <key>selection</key>
+          <string>#005f87</string>
+          <key>findHighlight</key>
+          <string>#d78700</string>
+        </dict>
+      </dict>
+
+      <!--
+        --------------------
+        -- Scope settings --
+        --------------------
+        -->
+
+      <!-- Comment
+        -- state: consistent with vim markup
+        -->
+      <dict>
+        <key>name</key>
+        <string>Comment</string>
+        <key>scope</key>
+        <string>comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#808080</string>
+        </dict>
+      </dict>
+
+      <!-- String literals
+        -- state: consistent with vim markup
+        -->
+      <dict>
+        <key>name</key>
+        <string>String</string>
+        <key>scope</key>
+        <string>string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d7d7af</string>
+        </dict>
+      </dict>
+
+      <!-- Keyword
+        -- state: consistent with vim markup
+        -->
+      <dict>
+        <key>name</key>
+        <string>Keyword</string>
+        <key>scope</key>
+        <string>keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87d7ff</string>
+        </dict>
+      </dict>
+
+      <!-- Language reserved variables
+        -- state: mostly consistent
+        -->
+      <dict>
+        <key>name</key>
+        <string>Reserved names</string>
+        <key>scope</key>
+        <string>variable.language</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87d7ff</string>
+        </dict>
+      </dict>
+
+      <!-- Storage
+        -- state: inconsistent for Python, consistent for C++
+        -- Python: class, def
+        -- C++: static, external
+        -->
+      <dict>
+        <key>name</key>
+        <string>Storage</string>
+        <key>scope</key>
+        <string>storage</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87d7af</string>
+        </dict>
+      </dict>
+
+      <!-- Constants
+        -- state: inconsistent with vim markup
+        -->
+      <dict>
+        <key>name</key>
+        <string>Built-in constant</string>
+        <key>scope</key>
+        <string>constant</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d7d7af</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Escape character constant</string>
+        <key>scope</key>
+        <string>constant.character.escape</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d7afd7</string>
+        </dict>
+      </dict>
+
+      <!-- Function definitions
+        -- state: consistent for Python, inconsistent for C++
+        -->
+      <dict>
+        <key>name</key>
+        <string>Function definition</string>
+        <key>scope</key>
+        <string>entity.name.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#afd787</string>
+        </dict>
+      </dict>
+
+      <!-- Preprocessor statements
+        -- state: mostly consistent
+        -->
+      <dict>
+        <key>name</key>
+        <string>Preprocessor statements</string>
+        <key>scope</key>
+        <string>meta.preprocessor</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87d7af</string>
+        </dict>
+      </dict>
+
+      <!-- XML Tags
+        -- state: consistent with vim markup
+        -->
+      <dict>
+        <key>name</key>
+        <string>Tag name</string>
+        <key>scope</key>
+        <string>entity.name.tag, punctuation.definition.tag</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#afd787</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Tag attribute</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87d7af</string>
+        </dict>
+      </dict>
+
+    </array>
+  </dict>
+</plist>
